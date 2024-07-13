@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="NamesAnchor" prefHeight="400.0" prefWidth="600.0" styleClass="anchorPanes" stylesheets="@myStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.PlayerNamesController">
+   <children>
+      <VBox alignment="CENTER" layoutY="100.0" prefHeight="200.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="announcementLabel" alignment="CENTER" contentDisplay="CENTER" lineSpacing="20.0" prefHeight="57.0" prefWidth="541.0" styleClass="label-beautify" stylesheets="@myStyle.css" text="Enter your name Player 1" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="OCR A Extended" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" alignment="CENTER" maxWidth="281.0" prefHeight="40.0" prefWidth="281.0" styleClass="bright-dark-text-field" stylesheets="@myStyle.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#enterName" prefHeight="50.0" prefWidth="180.0" styleClass="my-button" stylesheets="@myStyle.css" text="LET'S GO!" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

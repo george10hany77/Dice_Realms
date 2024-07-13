@@ -1,0 +1,18 @@
+.grid .label{
+    -fx-padding: 0 0 0 1;
+}
+.grid .button{
+    -fx-pref-height: 10000000000;
+    -fx-pref-width: 100000000000000000;
+}
+
+.grid .button:hover{
+    all: unset;
+}
+.grid .button.attackable:hover{
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+}
+
+

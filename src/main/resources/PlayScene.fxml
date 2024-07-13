@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPanePlayScene" styleClass="anchorPanes" stylesheets="@myStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.PlaySceneController">
+   <children>
+      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefWidth="623.0" spacing="3.0">
+                     <children>
+                        <Label fx:id="Player1Name" alignment="CENTER" prefHeight="19.0" prefWidth="309.0" styleClass="label-fantasy" stylesheets="@myStyle.css" text="Label">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="player1State" prefHeight="37.0" prefWidth="197.0" styleClass="label-state" stylesheets="@myStyle.css" text="Label" />
+                        <GridPane fx:id="Player1Hydra" prefHeight="151.0" prefWidth="623.0" styleClass="grid-pane" stylesheets="@myStyle.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="74.0" prefWidth="73.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H11" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="64.0" prefWidth="62.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H12" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="59.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H13" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="69.0" prefWidth="65.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H14" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="69.0" prefWidth="69.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H15" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="70.0" prefWidth="64.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H21" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="74.0" prefWidth="58.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H22" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="73.0" prefWidth="52.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H23" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="67.0" prefWidth="66.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H24" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="81.0" prefWidth="70.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H25" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="37.0" prefWidth="57.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H26" textAlignment="JUSTIFY" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="64.0" prefWidth="100.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="C" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="61.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="R" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="65.0" prefWidth="68.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="S" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="74.0" prefWidth="84.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="71.0" prefWidth="79.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="80.0" prefWidth="84.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="87.0" prefWidth="81.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="82.0" prefWidth="83.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="78.0" prefWidth="62.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="74.0" prefWidth="88.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="79.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="51.0" prefWidth="75.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="60.0" prefWidth="80.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="73.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="75.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="93.0" prefWidth="109.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="94.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="112.0" prefWidth="109.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="91.0" prefWidth="86.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="76.0" prefWidth="92.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="86.0" prefWidth="110.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="77.0" prefWidth="90.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="70.0" prefWidth="93.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="91.0" prefWidth="112.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="119.0" prefWidth="130.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="91.0" prefWidth="109.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="95.0" prefWidth="105.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="92.0" prefWidth="101.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="109.0" prefWidth="117.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="114.0" prefWidth="123.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="86.0" prefWidth="100.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="110.0" prefWidth="130.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="146.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Button fx:id="tempcode" alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="80.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="75.0" prefWidth="74.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="78.0" prefWidth="87.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="Player1Phoenix" prefHeight="121.0" prefWidth="415.0" styleClass="grid-pane-magenta" stylesheets="@myStyle.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="148.0" prefWidth="268.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="#" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="393.0" prefWidth="1383.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="H" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="193.0" prefWidth="281.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="C" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="471.0" prefWidth="1039.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="R" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="190.0" prefWidth="442.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="169.0" prefWidth="170.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="362.0" prefWidth="464.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="309.0" prefWidth="315.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="213.0" prefWidth="249.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="339.0" prefWidth="511.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="6" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="357.0" prefWidth="919.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="7" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="360.0" prefWidth="1109.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="8" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="315.0" prefWidth="964.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="9" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="358.0" prefWidth="854.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="10" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="359.0" prefWidth="1010.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="11" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="406.0" prefWidth="1003.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="433.0" prefWidth="953.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="402.0" prefWidth="686.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="373.0" prefWidth="1047.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="436.0" prefWidth="928.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="322.0" prefWidth="907.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="435.0" prefWidth="1120.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="434.0" prefWidth="795.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="420.0" prefWidth="463.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="255.0" prefWidth="213.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="432.0" prefWidth="1009.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="410.0" prefWidth="793.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="736.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="398.0" prefWidth="641.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="146.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="180.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="214.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="248.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="282.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" layoutX="350.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="396.0" prefWidth="441.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="256.0" prefWidth="369.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="146.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="180.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="214.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="248.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="282.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="316.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" layoutX="350.0" layoutY="124.0" prefHeight="166.0" prefWidth="257.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="player1Dragon" prefHeight="162.0" prefWidth="316.0" styleClass="grid-pane-red" stylesheets="@myStyle.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="22.0" prefWidth="104.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="45.0" prefWidth="120.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="63.0" prefWidth="110.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="25.0" prefWidth="107.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="74.0" prefWidth="116.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="38.0" prefWidth="150.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="74.0" prefWidth="126.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="38.0" prefWidth="118.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="30.0" prefWidth="118.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="67.0" prefWidth="118.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="46.0" prefWidth="145.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="77.0" prefWidth="111.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="106.0" prefWidth="144.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="48.0" prefWidth="153.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="42.0" prefWidth="142.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#player1DragonMove" prefHeight="46.0" prefWidth="136.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="55.0" prefWidth="129.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="110.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="82.0" prefWidth="162.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="64.0" prefWidth="146.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="94.0" prefWidth="182.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Rewards" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="78.0" prefWidth="152.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R1" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="150.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="76.0" prefWidth="192.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R3" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="58.0" prefWidth="110.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R4" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="20.0" prefWidth="109.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="106.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="69.0" prefWidth="152.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="64.0" prefWidth="155.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="42.0" prefWidth="152.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Faces" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="85.0" prefWidth="150.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Wings" textAlignment="JUSTIFY" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="97.0" prefWidth="150.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Tails" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="59.0" prefWidth="100.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Hearts" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="29.0" prefWidth="118.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Scores" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="138.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="Player1Lion" prefHeight="151.0" prefWidth="461.0" styleClass="grid-pane-yellow" stylesheets="@myStyle.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="65.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="54.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="61.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="56.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="40.0" prefWidth="54.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="57.0" prefWidth="54.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="6" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="49.0" prefWidth="50.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="7" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="70.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="8" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="81.0" prefWidth="96.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="9" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="70.0" prefWidth="82.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="10" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="114.0" prefWidth="134.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="11" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="74.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="H" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="75.0" prefWidth="101.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="M" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="77.0" prefWidth="90.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="R" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="61.0" prefWidth="93.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="73.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="57.0" prefWidth="73.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="84.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="70.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="36.0" prefWidth="49.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="91.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="66.0" prefWidth="99.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="58.0" prefWidth="72.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="61.0" prefWidth="93.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="77.0" prefWidth="110.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="78.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="76.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="46.0" prefWidth="66.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="48.0" prefWidth="92.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="74.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="58.0" prefWidth="89.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="66.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="50.0" prefWidth="78.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="88.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="126.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="82.0" prefWidth="86.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="86.0" prefWidth="80.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="100.0" prefWidth="89.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="124.0" prefWidth="94.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="102.0" prefWidth="87.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="115.0" prefWidth="92.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="104.0" prefWidth="69.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="96.0" prefWidth="69.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="93.0" prefWidth="89.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="106.0" prefWidth="62.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="67.0" prefWidth="62.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player1LionMove" prefHeight="55.0" prefWidth="63.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <GridPane prefWidth="511.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane fx:id="gridGaia1" prefWidth="511.0" styleClass="grid" stylesheets="@gaia.css" GridPane.columnSpan="6" GridPane.rowSpan="5">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label fx:id="la111" alignment="CENTER" prefHeight="39.0" prefWidth="63.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="X" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="48.0" prefWidth="103.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="2" GridPane.columnIndex="2" GridPane.valignment="CENTER" />
+                                    <Label fx:id="lab12111" alignment="CENTER" prefHeight="67.0" prefWidth="121.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="69.0" prefWidth="116.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="94.0" prefWidth="125.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="59.0" prefWidth="204.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="3" GridPane.columnIndex="3" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="63.0" prefWidth="197.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="4" GridPane.columnIndex="4" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="66.0" prefWidth="206.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="R" GridPane.columnIndex="5" GridPane.valignment="CENTER" />
+                                    <Label fx:id="side1111" alignment="CENTER" prefHeight="71.0" prefWidth="191.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="74.0" prefWidth="198.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="73.0" prefWidth="179.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="129.0" prefWidth="264.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="R" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="54.0" prefWidth="89.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="53.0" prefWidth="82.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="75.0" prefWidth="191.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="81.0" prefWidth="187.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#player1GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                       <styleClass>
+                                          <String fx:value="attackable" />
+                                          <String fx:value="button-cell-green" />
+                                       </styleClass>
+                                    </Button>
+                                    <Label alignment="CENTER" prefHeight="70.0" prefWidth="108.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="1" GridPane.columnIndex="1" GridPane.valignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                              <GridPane fx:id="gridGaia1p" GridPane.columnSpan="12" GridPane.rowIndex="5">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="81.0" prefWidth="179.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="S" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="79.0" prefWidth="183.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="79.0" prefWidth="151.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="85.0" prefWidth="201.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="79.0" prefWidth="172.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="77.0" prefWidth="157.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="74.0" prefWidth="124.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="115.0" prefWidth="223.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="66.0" prefWidth="147.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="77.0" prefWidth="150.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="76.0" prefWidth="97.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label alignment="CENTER" prefHeight="30.0" prefWidth="90.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                           <stylesheets>
+                              <URL value="@gaia.css" />
+                              <URL value="@myStyle.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="grid" />
+                              <String fx:value="grid-pane-green" />
+                           </styleClass>
+                        </GridPane>
+                        <Label fx:id="player1Counter" prefHeight="37.0" prefWidth="626.0" styleClass="label-state" stylesheets="@myStyle.css" text="Label" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="505.0" style="-fx-alignment: center;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="roundNumberLabel" styleClass="label-fantasy" stylesheets="@myStyle.css" text="Rounds" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentPlayerLabel" alignment="CENTER" prefHeight="59.0" prefWidth="383.0" styleClass="label-fantasy" stylesheets="@myStyle.css" text="Current Player:" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="rollDice" minHeight="143.0" minWidth="173.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="143.0" prefWidth="173.0" stylesheets="@myStyle.css" VBox.vgrow="ALWAYS" />
+                  <HBox fx:id="ForgottenDices" prefHeight="120.0" prefWidth="506.0" stylesheets="@myStyle.css" VBox.vgrow="ALWAYS" />
+                  <HBox fx:id="UsedDicesPlayer1" alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="506.0" VBox.vgrow="ALWAYS" />
+                  <HBox fx:id="UsedDicesPlayer2" alignment="CENTER_RIGHT" prefHeight="118.0" prefWidth="506.0" VBox.vgrow="ALWAYS" />
+                  <Label VBox.vgrow="ALWAYS" />
+                  <Label fx:id="roundNumber" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="52.0" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="timeWarp" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#timeWarp" prefHeight="138.0" prefWidth="100.0" styleClass="my-button" stylesheets="@myStyle.css" />
+                  <HBox fx:id="ActiveDices" alignment="CENTER" prefHeight="72.0" prefWidth="518.0" spacing="12.0">
+                     <children>
+                        <ImageView fx:id="RedDice" fitHeight="70.0" fitWidth="85.0" onMouseClicked="#onDiceClick" onMouseDragOver="#onHoverRed" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Dice/RedDie/RedDieIdle.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="GreenDice" fitHeight="70.0" fitWidth="85.0" onMouseClicked="#onDiceClick" onMouseDragOver="#onHoverGreen" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Dice/GreenDie/GreenDieIdle.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="BlueDice" fitHeight="70.0" fitWidth="85.0" onMouseClicked="#onDiceClick" onMouseDragOver="#onHoverBlue" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Dice/BlueDie/BlueDieIdle.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="MagentaDice" fitHeight="70.0" fitWidth="85.0" onMouseClicked="#onDiceClick" onMouseDragOver="#onHoverMagenta" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Dice/MagentaDie/MagentaDieIdle.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="YellowDice" fitHeight="70.0" fitWidth="85.0" onMouseClicked="#onDiceClick" onMouseDragOver="#onHoverYellow" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Dice/YellowDie/YellowDieIdle.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="WhiteDice" fitHeight="70.0" fitWidth="85.0" onMouseClicked="#onDiceClick" onMouseDragOver="#onHoverWhite" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Dice/WhiteDie/WhiteDieIdle.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" spacing="3.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="Player2Name" alignment="CENTER" prefHeight="19.0" prefWidth="295.0" styleClass="label-fantasy" stylesheets="@myStyle.css" text="Label">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="player2State" prefHeight="37.0" prefWidth="197.0" styleClass="label-state" stylesheets="@myStyle.css" text="Label" />
+                  <GridPane fx:id="Player2Hydra" prefHeight="151.0" prefWidth="623.0" styleClass="grid-pane" stylesheets="@myStyle.css">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="67.0" prefWidth="88.0" styleClass="grid-cell" stylesheets="@myStyle.css" />
+                        <Label alignment="CENTER" prefHeight="74.0" prefWidth="73.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H11" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="64.0" prefWidth="62.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H12" GridPane.columnIndex="2" />
+                        <Label alignment="CENTER" prefHeight="60.0" prefWidth="59.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H13" GridPane.columnIndex="3" />
+                        <Label alignment="CENTER" prefHeight="69.0" prefWidth="65.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H14" GridPane.columnIndex="4" />
+                        <Label alignment="CENTER" prefHeight="69.0" prefWidth="69.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H15" GridPane.columnIndex="5" />
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="64.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H21" GridPane.columnIndex="6" />
+                        <Label alignment="CENTER" prefHeight="74.0" prefWidth="58.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H22" GridPane.columnIndex="7" />
+                        <Label alignment="CENTER" prefHeight="73.0" prefWidth="52.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H23" GridPane.columnIndex="8" />
+                        <Label alignment="CENTER" prefHeight="67.0" prefWidth="66.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H24" GridPane.columnIndex="9" />
+                        <Label alignment="CENTER" prefHeight="81.0" prefWidth="70.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H25" GridPane.columnIndex="10" />
+                        <Label alignment="CENTER" prefHeight="64.0" prefWidth="94.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H26" GridPane.columnIndex="11" />
+                        <Label alignment="CENTER" prefHeight="60.0" prefWidth="60.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="H" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="64.0" prefWidth="100.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="C" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="61.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="R" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="65.0" prefWidth="68.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="S" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="74.0" prefWidth="84.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="71.0" prefWidth="79.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="80.0" prefWidth="84.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="87.0" prefWidth="81.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="82.0" prefWidth="83.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="78.0" prefWidth="62.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="74.0" prefWidth="88.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="79.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="51.0" prefWidth="75.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="60.0" prefWidth="80.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="73.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="75.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="93.0" prefWidth="109.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="94.0" prefWidth="95.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="112.0" prefWidth="109.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="91.0" prefWidth="86.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="76.0" prefWidth="92.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="86.0" prefWidth="110.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="77.0" prefWidth="90.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="93.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="91.0" prefWidth="112.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="119.0" prefWidth="130.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="91.0" prefWidth="109.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="95.0" prefWidth="105.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="92.0" prefWidth="101.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="109.0" prefWidth="117.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="114.0" prefWidth="123.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="86.0" prefWidth="100.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="110.0" prefWidth="130.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="143.0" prefWidth="146.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="62.0" prefWidth="80.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="75.0" prefWidth="74.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="78.0" prefWidth="87.0" styleClass="grid-cell" stylesheets="@myStyle.css" text="---" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#attackHydra" prefHeight="72.0" prefWidth="78.0" styleClass="button-cell" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="Player2Phoenix" prefHeight="121.0" prefWidth="415.0" styleClass="grid-pane-magenta" stylesheets="@myStyle.css">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="148.0" prefWidth="268.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="#" />
+                        <Label alignment="CENTER" prefHeight="393.0" prefWidth="1383.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="H" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="193.0" prefWidth="281.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="C" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="471.0" prefWidth="1039.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="R" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="190.0" prefWidth="442.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="1" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="169.0" prefWidth="170.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="2" GridPane.columnIndex="2" />
+                        <Label alignment="CENTER" prefHeight="362.0" prefWidth="464.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="3" GridPane.columnIndex="3" />
+                        <Label alignment="CENTER" prefHeight="309.0" prefWidth="315.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="4" GridPane.columnIndex="4" />
+                        <Label alignment="CENTER" prefHeight="213.0" prefWidth="249.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="5" GridPane.columnIndex="5" />
+                        <Label alignment="CENTER" prefHeight="339.0" prefWidth="511.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="6" GridPane.columnIndex="6" />
+                        <Label alignment="CENTER" prefHeight="357.0" prefWidth="919.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="7" GridPane.columnIndex="7" />
+                        <Label alignment="CENTER" prefHeight="360.0" prefWidth="1109.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="8" GridPane.columnIndex="8" />
+                        <Label alignment="CENTER" prefHeight="315.0" prefWidth="964.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="9" GridPane.columnIndex="9" />
+                        <Label alignment="CENTER" prefHeight="358.0" prefWidth="854.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="10" GridPane.columnIndex="10" />
+                        <Label alignment="CENTER" prefHeight="359.0" prefWidth="1010.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="11" GridPane.columnIndex="11" />
+                        <Label alignment="CENTER" prefHeight="406.0" prefWidth="1003.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="433.0" prefWidth="953.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="402.0" prefWidth="686.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="373.0" prefWidth="1047.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="436.0" prefWidth="928.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="322.0" prefWidth="907.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="435.0" prefWidth="1120.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="434.0" prefWidth="795.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="420.0" prefWidth="463.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="255.0" prefWidth="213.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="432.0" prefWidth="1009.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="&lt;" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="410.0" prefWidth="793.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="736.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="398.0" prefWidth="641.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="146.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="180.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="214.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="248.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="282.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                        <Button alignment="CENTER" layoutX="350.0" layoutY="48.0" mnemonicParsing="false" onAction="#phoenixMove" prefHeight="401.0" prefWidth="807.0" styleClass="button-cell-magenta" stylesheets="@myStyle.css" text="0" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="396.0" prefWidth="441.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="256.0" prefWidth="369.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="146.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="180.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="214.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="248.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="282.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="316.0" layoutY="124.0" prefHeight="270.0" prefWidth="324.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" layoutX="350.0" layoutY="124.0" prefHeight="166.0" prefWidth="257.0" styleClass="grid-cell-magenta" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="player2Dragon" prefHeight="162.0" prefWidth="316.0" styleClass="grid-pane-red" stylesheets="@myStyle.css">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="33.0" prefWidth="114.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="45.0" prefWidth="120.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="63.0" prefWidth="110.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="51.0" prefWidth="102.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="74.0" prefWidth="116.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="38.0" prefWidth="150.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="74.0" prefWidth="126.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="38.0" prefWidth="118.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="30.0" prefWidth="118.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="67.0" prefWidth="118.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="46.0" prefWidth="145.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="77.0" prefWidth="111.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="106.0" prefWidth="144.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="48.0" prefWidth="153.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="42.0" prefWidth="142.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#player2DragonMove" prefHeight="46.0" prefWidth="136.0" styleClass="button-cell-red" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="129.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D1" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="53.0" prefWidth="110.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="82.0" prefWidth="162.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="64.0" prefWidth="146.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="D4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="94.0" prefWidth="182.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Rewards" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="78.0" prefWidth="152.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R1" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="62.0" prefWidth="150.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="76.0" prefWidth="192.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R3" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="110.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R4" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="52.0" prefWidth="156.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="R5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="106.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="69.0" prefWidth="152.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="64.0" prefWidth="155.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="42.0" prefWidth="152.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Faces" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="85.0" prefWidth="150.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Wings" textAlignment="JUSTIFY" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="97.0" prefWidth="150.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Tails" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="104.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Hearts" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="118.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="Scores" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="138.0" styleClass="grid-cell-red" stylesheets="@myStyle.css" text="S1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="Player2Lion" prefHeight="151.0" prefWidth="461.0" styleClass="grid-pane-yellow" stylesheets="@myStyle.css">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="65.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="54.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="40.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="56.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="54.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="57.0" prefWidth="54.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="6" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="49.0" prefWidth="50.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="7" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="70.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="8" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="81.0" prefWidth="96.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="9" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="82.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="10" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="114.0" prefWidth="134.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="11" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="74.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="H" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="75.0" prefWidth="101.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="M" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="77.0" prefWidth="90.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="R" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="61.0" prefWidth="93.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="62.0" prefWidth="73.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="57.0" prefWidth="73.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="84.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="70.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="49.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="62.0" prefWidth="91.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="66.0" prefWidth="99.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="72.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="61.0" prefWidth="93.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="77.0" prefWidth="110.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="78.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="76.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="66.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="48.0" prefWidth="92.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="74.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="58.0" prefWidth="89.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="43.0" prefWidth="66.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="78.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="39.0" prefWidth="88.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="126.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER" prefHeight="82.0" prefWidth="86.0" styleClass="grid-cell-yellow" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="86.0" prefWidth="80.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="100.0" prefWidth="89.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="124.0" prefWidth="94.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="102.0" prefWidth="87.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="115.0" prefWidth="92.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="104.0" prefWidth="69.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="96.0" prefWidth="69.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="93.0" prefWidth="89.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="106.0" prefWidth="62.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="67.0" prefWidth="62.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#player2LionMove" prefHeight="55.0" prefWidth="63.0" styleClass="button-cell-yellow" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                     </children>
+                  </GridPane>
+                  <GridPane prefWidth="511.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane fx:id="gridGaia2" prefWidth="511.0" styleClass="grid" stylesheets="@gaia.css" GridPane.columnIndex="6" GridPane.columnSpan="6" GridPane.rowSpan="5">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="la11" alignment="CENTER" prefHeight="65.0" prefWidth="105.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="X" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="83.0" prefWidth="175.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label fx:id="lab1211" alignment="CENTER" prefHeight="72.0" prefWidth="109.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="63.0" prefWidth="78.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="51.0" prefWidth="94.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="89.0" prefWidth="154.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="90.0" prefWidth="136.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="78.0" prefWidth="48.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="R" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label fx:id="side111" alignment="CENTER" prefHeight="75.0" prefWidth="48.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="48.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="48.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="63.0" prefWidth="103.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="R" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="48.0" prefWidth="98.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="40.0" prefWidth="71.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="37.0" prefWidth="77.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="71.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Button mnemonicParsing="false" onAction="#player2GaiaMove" stylesheets="@myStyle.css" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <styleClass>
+                                    <String fx:value="attackable" />
+                                    <String fx:value="button-cell-green" />
+                                 </styleClass></Button>
+                              <Label alignment="CENTER" prefHeight="88.0" prefWidth="181.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <GridPane fx:id="gridGaia2p" GridPane.columnSpan="12" GridPane.rowIndex="5">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="69.0" prefWidth="170.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="S" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="63.0" prefWidth="161.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="136.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="45.0" prefWidth="110.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="107.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="49.0" prefWidth="107.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="91.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="58.0" prefWidth="105.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="53.0" prefWidth="107.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="58.0" prefWidth="93.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="54.0" prefWidth="87.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="47.0" styleClass="grid-cell-green" stylesheets="@myStyle.css" text="Label" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <styleClass>
+                        <String fx:value="grid" />
+                        <String fx:value="grid-pane-green" />
+                     </styleClass>
+                     <stylesheets>
+                        <URL value="@myStyle.css" />
+                        <URL value="@gaia.css" />
+                     </stylesheets>
+                  </GridPane>
+                  <Label fx:id="player2Counter" prefHeight="37.0" prefWidth="618.0" styleClass="label-state" stylesheets="@myStyle.css" text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

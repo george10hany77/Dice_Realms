@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneEnd" maxHeight="1080.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1980.0" styleClass="anchorPanes" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.EndSceneController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label fx:id="Title" alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="1789.0" styleClass="label-state" stylesheets="@myStyle.css" text="Label" />
+            <HBox prefWidth="1920.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <VBox alignment="CENTER" prefWidth="640.0" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label fx:id="player1Title" prefHeight="73.0" prefWidth="459.0" styleClass="label-fantasy" text="Player one game score" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="SOMETIMES">
+                           <font>
+                              <Font size="42.0" />
+                           </font>
+                        </Label>
+                        <GridPane fx:id="winnerscore" alignment="CENTER" prefWidth="0.0" styleClass="grid-pane-end" stylesheets="@myStyle.css" VBox.vgrow="SOMETIMES">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="725.6666564941406" minWidth="10.0" prefWidth="471.00004069010413" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="417.6666259765625" minWidth="10.0" prefWidth="177.6666259765625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="5.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="Realm" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="92.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="RED" textFill="RED" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" fx:id="x">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="y" prefHeight="101.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="GREEN" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="z" prefHeight="105.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="BLUE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="w" prefHeight="124.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="MAGENTA" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="v" prefHeight="127.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="YELLOW" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="EC1" prefHeight="139.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="Elemental Crests" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="total3" prefHeight="188.0" prefWidth="459.0" styleClass="grid-pane-end-cell" text="TotalScore" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="212.0" prefWidth="166.0" styleClass="grid-pane-end-cell" text="Score" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="red" prefHeight="157.0" prefWidth="243.0" styleClass="grid-pane-end-cell" text="Label" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="green" prefHeight="220.0" prefWidth="257.0" styleClass="grid-pane-end-cell" text="Label" textFill="#00ff11" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="blue" prefHeight="457.0" prefWidth="549.0" styleClass="grid-pane-end-cell" text="Label" textFill="#1300ff" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="magenta" prefHeight="476.0" prefWidth="567.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="yellow" prefHeight="580.0" prefWidth="776.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="EC" prefHeight="131.0" prefWidth="226.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="total" prefHeight="216.0" prefWidth="166.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefWidth="640.0" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label fx:id="player2Title" prefWidth="459.0" styleClass="label-fantasy" text="Player two game score" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="SOMETIMES">
+                           <font>
+                              <Font size="42.0" />
+                           </font>
+                        </Label>
+                        <GridPane fx:id="winnerscore1" alignment="CENTER" styleClass="grid-pane-end" VBox.vgrow="SOMETIMES">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="688.3332214355469" minWidth="10.0" prefWidth="455.0001627604167" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="605.9999287923177" minWidth="10.0" prefWidth="194.33317057291669" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="143.0" prefWidth="443.0" styleClass="grid-pane-end-cell" text="Realm" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="80.0" prefWidth="657.0" styleClass="grid-pane-end-cell" text="RED" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" fx:id="x">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="y" prefHeight="80.0" prefWidth="605.0" styleClass="grid-pane-end-cell" text="GREEN" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="z" prefHeight="80.0" prefWidth="481.0" styleClass="grid-pane-end-cell" text="BLUE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="w" prefHeight="80.0" prefWidth="631.0" styleClass="grid-pane-end-cell" text="MAGENTA" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="v" prefHeight="80.0" prefWidth="563.0" styleClass="grid-pane-end-cell" text="YELLOW" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="EC2" prefHeight="80.0" prefWidth="587.0" styleClass="grid-pane-end-cell" text="Elemental Crests" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="total2" prefHeight="80.0" prefWidth="791.0" styleClass="grid-pane-end-cell" text="TotalScore" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="163.0" prefWidth="183.0" styleClass="grid-pane-end-cell" text="Score" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="red1" prefHeight="464.0" prefWidth="480.0" styleClass="grid-pane-end-cell" text="Label" textFill="RED" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="green1" prefHeight="537.0" prefWidth="604.0" styleClass="grid-pane-end-cell" text="Label" textFill="#00ff11" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="blue1" prefHeight="415.0" prefWidth="589.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="magenta1" prefHeight="348.0" prefWidth="408.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="yellow1" prefHeight="304.0" prefWidth="339.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="EC1" prefHeight="156.0" prefWidth="183.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="total1" prefHeight="199.0" prefWidth="183.0" styleClass="grid-pane-end-cell" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font size="61.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@end.css" />
+      <URL value="@myStyle.css" />
+   </stylesheets>
+</AnchorPane>

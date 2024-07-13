@@ -1,0 +1,73 @@
+/* Main VBox styling */
+VBox {
+    -fx-padding: 15;
+    -fx-spacing: 20;
+}
+
+/* Title styling */
+.title {
+    -fx-text-fill: #ffd700;
+    -fx-font-size: 68px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+/* HBox styling */
+HBox {
+    -fx-spacing: 50;
+}
+
+/* Player score sheet titles */
+Label#winnerTitle, Label#loserTitle {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+/* GridPane styling */
+GridPane {
+    -fx-padding: 20;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+/* GridPane labels */
+GridPane Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 61px;
+}
+
+/* Specific score labels */
+Label#red, Label#green, Label#blue, Label#magenta, Label#yellow, Label#EC, Label#total,
+Label#red1, Label#green1, Label#blue1, Label#magenta1, Label#yellow1, Label#EC1, Label#total1 {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+Label#red,Label#red1{
+    -fx-text-fill: red;
+}
+Label#green, Label#green1{
+    -fx-text-fill: green;
+}
+Label#blue, Label#blue1{
+    -fx-text-fill: blue;
+}
+Label#magenta,Label#magenta1{
+    -fx-text-fill: magenta;
+}
+Label#yellow,Label#yellow1{
+    -fx-text-fill: yellow;
+}
+
+/* Padding and margin adjustments */
+VBox.margin {
+    -fx-left: 50;
+    -fx-right: 50;
+}
+
+VBox {
+    -fx-padding: 10 50 10 50;
+}
+

@@ -1,0 +1,503 @@
+.anchorPanes {
+    -fx-background-size: contain; /* Adjust this as needed */
+    -fx-background-position: center; /* Adjust this as needed */
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%100%;
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #e74c3c); /* Different gradient background */
+    -fx-border-color: #e74c3c; /* Matching border color */
+    -fx-border-width: 5px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners */
+    -fx-background-radius: 10px; /* Rounded corners for background */
+    -fx-padding: 20px; /* Padding inside the pane */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 1); /* Drop shadow for 3D effect */
+}
+
+#anchorPaneEnd {
+    -fx-background-image: url("images/_cfd4d983-be35-4950-9e76-fc3d89b6ae10.jpg");
+    -fx-background-size: cover; /* Cover the entire pane */
+    -fx-background-position: center; /* Center the background image */
+    -fx-border-color: #1a1a1a; /* Darker border color */
+    -fx-border-width: 8px; /* Border width */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-background-radius: 15px; /* Rounded corners for background */
+    -fx-padding: 25px; /* Padding inside the pane */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 15, 0.25, 0, 2); /* Deeper drop shadow for 3D effect */
+}
+#anchorPaneID {
+    -fx-background-image: url("images/finalbgrd.jpeg");
+}
+
+#GameModeAnchor {
+    -fx-background-image: url("images/inbetween.jpeg");
+}
+
+#NamesAnchor {
+    -fx-background-image: url("images/NameAsking.jpeg");
+}
+
+#anchorPanePlayScene {
+    -fx-background-image: url("images/pnggamescene.jpg");
+    -fx-background-size: cover; /* Cover the entire pane */
+    -fx-background-position: center; /* Center the background image */
+    -fx-border-color: #1a1a1a; /* Darker border color */
+    -fx-border-width: 8px; /* Border width */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-background-radius: 15px; /* Rounded corners for background */
+    -fx-padding: 25px; /* Padding inside the pane */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 15, 0.25, 0, 2); /* Deeper drop shadow for 3D effect */
+}
+
+#SettingsAnchor {
+    -fx-background-image: url("images/SettingsBGR.jpeg");
+}
+
+.bright-dark-text-field {
+    -fx-background-color: #333333; /* Dark background */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-color: white; /* White border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px; /* Padding inside the text field */
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+.my-button {
+    -fx-background-color: #FFD700; /* Gold background */
+    -fx-background-radius: 10; /* Rounded corners */
+    -fx-border-radius: 10; /* Rounded corners for border */
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-border-color: #B8860B; /* Dark gold border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-text-fill: black; /* Black text color */
+    -fx-font-size: 20px; /* Font size */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 1); /* Drop shadow for 3D effect */
+    -fx-padding: 10px; /* Padding inside the button */
+}
+
+.my-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #333333, #1a1a1a); /* Gradient background on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 1); /* Shadow effect on hover */
+}
+
+.my-button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1a1a1a, #333333); /* Gradient background when pressed */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1), 2, 0, 0, 1); /* Shadow effect when pressed */
+}
+
+#timeWarp {
+    -fx-background-image: url('images/timewarp.png');
+    -fx-background-size: cover; /* Ensure the image covers the entire button */
+    -fx-background-position: center; /* Center the image */
+    -fx-background-repeat: no-repeat; /* Prevent the image from repeating */
+    -fx-background-color: transparent; /* Ensure no background color blocks the image */
+    -fx-border-color: transparent; /* Remove any border if necessary */
+    -fx-padding: 0; /* Remove padding */
+    -fx-shape: "M 80, 0 A 80, 80 0 1, 1 80, 130 A 80, 80 0 1, 1 80, 0"; /* Define circular shape for smaller size */
+    -fx-min-width: 130px; /* Minimum width of the button */
+    -fx-min-height: 130px; /* Minimum height of the button */
+    -fx-max-width: 130px; /* Maximum width of the button */
+    -fx-max-height: 130px; /* Maximum height of the button */
+}
+
+
+.label-beautify {
+    -fx-background-color: linear-gradient(#FFD700, #DAA520);
+    -fx-border-color: #B8860B;
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-width: 3px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 36px;
+    -fx-text-fill: #2B2B2B;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 1);
+}
+
+#rollDice {
+    -fx-background-image: url('images/rolldicenew.png');
+    -fx-background-size: cover; /* Ensure the image covers the entire button */
+    -fx-background-position: center; /* Center the image */
+    -fx-background-repeat: no-repeat; /* Prevent the image from repeating */
+    -fx-background-color: transparent; /* Ensure no background color blocks the image */
+    -fx-border-color: transparent; /* Remove any border if necessary */
+    -fx-padding: 0; /* Remove padding */
+    -fx-shape: "M 100, 0 A 100, 100 0 1, 1 100, 200 A 100, 100 0 1, 1 100, 0"; /* Define circular shape with a better aspect ratio */
+    -fx-min-width: 200px; /* Minimum width of the button */
+    -fx-min-height: 15px; /* Minimum height of the button */
+    -fx-max-width: 200px; /* Maximum width of the button */
+    -fx-max-height: 150px; /* Maximum height of the button */
+    -fx-pref-width: 200px; /* Preferred width of the button */
+    -fx-pref-height: 150px; /* Preferred height of the button */
+}
+
+.label-beautify-naming {
+    -fx-background-color: linear-gradient(#FFD700, #DAA520);
+    -fx-border-color: #8B4513;
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-padding: 20px;
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF; /* White text for better contrast on darker backgrounds */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 15, 0.25, 0, 2); /* Slightly larger shadow for more prominence */
+}
+
+.grid-pane {
+    -fx-background-color: #1E90FF; /* DodgerBlue background */
+    -fx-border-color: #00008B; /* DarkBlue border */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+}
+
+.grid-cell {
+    -fx-background-color: #87CEEB; /* SkyBlue for cells */
+    -fx-border-color: #4682B4; /* SteelBlue border for cells */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.25, 0, 1);
+}
+
+.button-cell {
+    -fx-background-color: linear-gradient(#1E90FF, #00BFFF); /* Gradient from DodgerBlue to DeepSkyBlue */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-color: #00008B; /* DarkBlue border */
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+    -fx-pref-width: 80px; /* Adjust width as needed */
+    -fx-pref-height: 40px; /* Adjust height as needed */
+}
+
+.grid-pane-magenta {
+    -fx-background-color: #8B008B; /* Dark Magenta background */
+    -fx-border-color: #4B0082; /* Indigo border */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+}
+
+.grid-cell-magenta {
+    -fx-background-color: #DA70D6; /* Orchid color for cells */
+    -fx-border-color: #9400D3; /* Dark Violet border for cells */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.25, 0, 1);
+}
+
+.button-cell-magenta {
+    -fx-background-color: linear-gradient(#8B008B, #9400D3); /* Gradient from Dark Magenta to Dark Violet */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-weight: bold;
+    -fx-border-color: #4B0082; /* Indigo border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+    -fx-pref-width: 80px; /* Adjusted width */
+    -fx-pref-height: 40px; /* Adjusted height */
+}
+
+.grid-pane-red {
+    -fx-background-color: #B22222; /* Firebrick background */
+    -fx-border-color: #8B0000; /* Dark Red border */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+}
+
+.grid-cell-red {
+    -fx-background-color: #FA8072; /* Salmon color for cells */
+    -fx-border-color: #FF6347; /* Tomato border for cells */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.25, 0, 1);
+}
+
+.button-cell-red {
+    -fx-background-color: linear-gradient(#B22222, #8B0000); /* Gradient from Firebrick to Dark Red */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-color: #8B0000; /* Dark Red border */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+    -fx-pref-width: 80px; /* Adjusted width */
+    -fx-pref-height: 40px; /* Adjusted height */
+    -fx-alignment: center;
+}
+
+.grid-pane-yellow {
+    -fx-background-color: #F0E68C; /* Khaki background */
+    -fx-border-color: #B8860B; /* Dark Goldenrod border */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+}
+
+.grid-cell-yellow {
+    -fx-background-color: #FFD700; /* Gold color for cells */
+    -fx-border-color: #B8860B; /* Dark Goldenrod border for cells */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.25, 0, 1);
+}
+
+.button-cell-yellow {
+    -fx-background-color: linear-gradient(#FFD700, #B8860B); /* Gradient from Gold to Dark Goldenrod */
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-color: #B8860B; /* Dark Goldenrod border */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+    -fx-pref-width: 80px; /* Adjusted width */
+    -fx-pref-height: 40px; /* Adjusted height */
+}
+
+.grid-pane-green {
+    -fx-background-color: #8FBC8F; /* Dark Sea Green background */
+    -fx-border-color: #2E8B57; /* Sea Green border */
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+}
+
+.grid-cell-green {
+    -fx-background-color: #98FB98; /* Pale Green color for cells */
+    -fx-border-color: #2E8B57; /* Sea Green border for cells */
+    -fx-border-width: 0px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.25, 0, 1);
+}
+
+.button-cell-green {
+    -fx-background-color: linear-gradient(#8FBC8F, #2E8B57); /* Gradient from Dark Sea Green to Sea Green */
+    -fx-font-family: "Comic Sans MS";
+    -fx-border-color: #2E8B57; /* Sea Green border */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 2);
+    -fx-pref-width: 80px; /* Adjusted width */
+    -fx-pref-height: 40px; /* Adjusted height */
+}
+
+.label-fantasy {
+    -fx-background-color: linear-gradient(to bottom, #4b0082, #8a2be2); /* Gradient from Indigo to Blue Violet */
+    -fx-border-color: #9370DB; /* Medium Purple border */
+    -fx-font-weight: bold;
+    -fx-font-family: "Papyrus", fantasy;
+    -fx-border-width: 2px; /* Smaller border width */
+    -fx-border-radius: 10px; /* Smaller border radius */
+    -fx-background-radius: 10px;
+    -fx-padding: 10px; /* Reduced padding */
+    -fx-font-size: 24px; /* Smaller font size */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 1); /* Drop shadow for a fantasy feel */
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+
+.label-fantasy-round {
+    -fx-background-color: linear-gradient(to bottom, #2E0854, #4B0082); /* Gradient from Dark Purple to Indigo */
+    -fx-border-color: #BA55D3; /* Medium Orchid border */
+    -fx-font-family: "Cinzel Decorative", serif;
+    -fx-border-width: 2px; /* Small border width */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-font-size: 24px; /* Smaller font size */
+    -fx-text-fill: #E6E6FA; /* Lavender text */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.25, 0, 1); /* Drop shadow for a fantasy feel */
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#currentPlayerLabel {
+    -fx-text-alignment: left;
+}
+
+.label-state {
+    -fx-background-color: linear-gradient(to bottom, #2C3E50, #4CA1AF); /* Gradient from dark blue-gray to light blue-green */
+    -fx-border-color: #4682B4; /* Steel Blue border */
+    -fx-font-family: "Cinzel", serif;
+    -fx-font-weight: bold;
+    -fx-border-width: 1px; /* Small border width */
+    -fx-border-radius: 5px; /* Smaller border radius */
+    -fx-background-radius: 5px;
+    -fx-padding: 5px; /* Reduced padding */
+    -fx-font-size: 16px; /* Smaller font size */
+    -fx-text-fill: #FFFFFF; /* White text */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.25, 0, 1); /* Drop shadow for a fantasy feel */
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+/* General styling for the GridPane to give it a 3D and fantasy feel */
+.grid-pane-end {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #4b0082;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-padding: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0);
+}
+
+/* Styling for each cell to have a dark fantasy feel */
+.grid-pane-end-cell {
+    -fx-background-color: #1c1c1c;
+    -fx-border-color: #4b0082;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 0px;
+    -fx-font-family: 'Papyrus', fantasy;
+    -fx-font-size: 38px;
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+}
+
+#player1Title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+#player2Title {
+    -fx-font-size: 32px;
+    -fx-font-weight: 700;
+}
+
+#Title {
+    -fx-font-size: 38px;
+    -fx-font-family: Papyrus;
+}
+
+/* Red Label */
+.label-red {
+    -fx-background-color: linear-gradient(to bottom, #b30000, #ff4d4d);
+    -fx-border-color: #660000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-family: 'Papyrus', fantasy;
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 1);
+    -fx-alignment: center;
+}
+
+#EC {
+        -fx-text-fill: linear-gradient(to right, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+
+#EC1 {
+    -fx-text-fill: linear-gradient(to right, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+
+#EC2 {
+    -fx-text-fill: linear-gradient(to right, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+
+#total {
+    -fx-text-fill: linear-gradient(to left, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+
+#total1 {
+    -fx-text-fill: linear-gradient(to left, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+
+#total2 {
+    -fx-text-fill: linear-gradient(to left, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+#total3 {
+    -fx-text-fill: linear-gradient(to left, #ff4d4d, #66ff66, #ffff66, #ff66ff, #4d94ff);
+}
+
+/* Title Label with Deep Purple Color */
+.label-title {
+    -fx-background-color: linear-gradient(to bottom, #4b0082, #301934); /* Gradient from indigo to dark purple */
+    -fx-border-color: #4b0082; /* Indigo border color */
+    -fx-border-width: 3px; /* Border width */
+    -fx-border-radius: 10px; /* Rounded corners for the border */
+    -fx-padding: 10px; /* Padding inside the label */
+    -fx-font-family: 'Papyrus', fantasy; /* Fantasy-style font */
+    -fx-font-size: 30px; /* Font size */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0); /* Drop shadow for depth */
+    -fx-alignment: center; /* Center text alignment */
+}
+
+#x {
+    -fx-text-fill: red;
+}
+
+#y {
+    -fx-text-fill: green;
+}
+
+#z {
+    -fx-text-fill: blue;
+}
+
+#w {
+    -fx-text-fill: magenta;
+}
+
+#v {
+    -fx-text-fill: yellow;
+}

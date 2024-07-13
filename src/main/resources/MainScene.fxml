@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="600.0" styleClass="anchorPanes" stylesheets="@myStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.MainSceneController">
+   <children>
+      <VBox fx:id="buttonVBox" alignment="BOTTOM_CENTER" layoutY="-2.6666666666666665" prefHeight="568.0" prefWidth="600.0" spacing="5.0" stylesheets="@myStyle.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.6666666666666665">
+         <children>
+            <Label fx:id="musicLabel" styleClass="label-state" stylesheets="@myStyle.css" text="Music Volume" />
+            <Slider fx:id="musicSliderReal" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="150.0">
+               <children>
+                  <Button fx:id="playBtn" mnemonicParsing="false" onAction="#toPlayScene" prefHeight="40.0" prefWidth="116.0" styleClass="my-button" stylesheets="@myStyle.css" text="Play" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="settingsBtn" mnemonicParsing="false" onAction="#toSettingScene" prefHeight="40.0" prefWidth="116.0" styleClass="my-button" stylesheets="@myStyle.css" text="Settings" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#terminateGame" prefHeight="40.0" prefWidth="116.0" styleClass="my-button" stylesheets="@myStyle.css" text="Exit" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
